@@ -74,9 +74,9 @@ footer {
     background-color: var(--marrom);
     border-top: 1px solid var(--bordo);
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.521);
-    position: static;
+    position: fixed;
     bottom: 0%;
-    max-width: 100vw;
+    width: 100vw;
     min-width: 320px;
 }
 
@@ -94,7 +94,7 @@ main > a {
     color: white;    
     text-align: right;
     max-width: 30px;
-    margin-left: 90vw;
+    margin-left: 90vw;    
 }
 section {
     background-color: white;
@@ -148,13 +148,17 @@ section > p {
     max-width: 15px;
 }
 
-#iglink {
+#wpicon {
+    max-width: 20px;
+}
+
+.link-contato {
     text-decoration: none;
     color: var(--marrom);
     
 }
 
-#iglink:hover {
+.link-contato:hover {
     color: var(--amarelo);    
     padding-top: 2px;
     padding-bottom: 2px;
