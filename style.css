@@ -10,6 +10,7 @@
     --fontepadrao: 'Courgette', arial, sans-serif;
 }
 
+/*  ========== GERAL ============= */
 * {
     margin: 0;
     padding: 0;
@@ -30,10 +31,10 @@ header {
 
 header > h1 {
     font-family: Courgette;
-    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     color: #ffbad1;
-    text-align: center;
     font-size: 1.8em;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
+    text-align: center;            
     padding-top: 2%;
     min-width: 200px;
     max-width: 900px;
@@ -41,10 +42,10 @@ header > h1 {
 
 header > p {
     font-family: Courgette;
-    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     color: #ffbad1;
-    text-align: center;
     font-size: 0.7em;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
+    text-align: center; 
     padding-bottom: 1%;   
     min-width: 200px;
     max-width: 900px;
@@ -61,9 +62,9 @@ nav > a {
     font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
-    margin-right: 5px;
-    padding: 3px;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
+    margin-right: 5px;
+    padding: 3px;    
 }
 
 nav > a:hover {
@@ -105,8 +106,8 @@ footer > p {
 
 main > a {
     display: block;    
-    text-decoration: none;
     color: white;    
+    text-decoration: none;
     text-align: right;
     max-width: 30px;
     margin-left: 90vw;    
@@ -124,14 +125,14 @@ section {
 }
 
 section > h2 {
+    color: var(--bordo);
+    font-size: 1.3em;    
     text-align: center;
     text-decoration: overline;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.3em;
-    color: var(--bordo);
-    padding-top: 10px;   
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    padding-top: 10px;       
 }
 
 section > p {
@@ -164,16 +165,15 @@ section > p {
 
 .verdoces {
     display: inline-block;    
+    background-color: var(--bordo);
+    color: var(--rosa);
     text-decoration: none;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--rosa);
-    background-color: var(--bordo);
     padding: 8px;
     border-radius: 10px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;    
 }
 
 .verdoces:hover {
@@ -236,11 +236,11 @@ section > p {
 
 #pagina-doces > h1 {
     font-family: var(--fontepadrao);
+    color: var(--marrom);
+    font-size: 1.9em;
     text-indent: 20px;    
     text-align: left;
-    padding: 5px;    
-    font-size: 1.9em;
-    color: var(--marrom);
+    padding: 5px;
     background-color: #f3b6006e;    
     border: 1px solid var(--rosa);
     border-radius: 3px;
@@ -270,10 +270,10 @@ section > p {
 .doces > p {    
     width: 150px;    
     margin: auto;
-    font-size: 0.7em;
-    font-weight: bold;
-    color: var(--marrom);
     margin-bottom: 30px;
+    color: var(--marrom);
+    font-size: 0.7em;
+    font-weight: bold;        
     background-color: var(--rosa);
     padding: 5px;
     border-radius: 5px;
@@ -288,11 +288,11 @@ section > p {
 
 #pagina-gelatos > h1 {
     font-family: var(--fontepadrao);
-    text-indent: 20px;    
-    text-align: left;
-    padding: 5px;    
     font-size: 1.9em;
     color: var(--marrom);
+    text-indent: 20px;    
+    text-align: left;
+    padding: 5px;        
     background-color: #f3b6006e;    
     border: 1px solid var(--rosa);
     border-radius: 3px;
@@ -321,10 +321,10 @@ section > p {
 .gelatos > p {    
     width: 150px;    
     margin: auto;
+    margin-bottom: 30px;
     font-size: 0.7em;
     font-weight: bold;
-    color: var(--marrom);
-    margin-bottom: 30px;
+    color: var(--marrom); 
     background-color: var(--rosa);
     padding: 5px;
     border-radius: 5px;
