@@ -29,7 +29,7 @@ header {
     background-color: var(--marrom);
     border-bottom: 1px solid var(--bordo);
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.521);
-    height: 100px;    
+    
 }
 
 header > h1 {
@@ -39,6 +39,8 @@ header > h1 {
     text-align: center;
     font-size: 1.8em;
     padding-top: 2%;
+    min-width: 200px;
+    max-width: 900px;
 }
 
 header > p {
@@ -47,10 +49,12 @@ header > p {
     color: #ffbad1;
     text-align: center;
     font-size: 0.7em;
-    padding-bottom: 1%;    
+    padding-bottom: 1%;   
+    min-width: 200px;
+    max-width: 900px;
 }
 
-nav {
+nav {    
     text-align: right;
     padding: 5px;
     margin-right: 1%;
