@@ -1,11 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-/* 
-CORES
-
-*/
-
+/*  ========== VARIAVEIS ============= */
 :root{
     --rosa: #ffbad1;
     --bordo: #3C0000;
@@ -25,11 +21,11 @@ body {
     background-color: var(--rosa);
 }
 
+/* ============== CABECALHO ============== */
 header {
     background-color: var(--marrom);
     border-bottom: 1px solid var(--bordo);
-    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.521);
-    
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.521);    
 }
 
 header > h1 {
@@ -75,6 +71,7 @@ nav > a:hover {
     transition: .5s;    
 }
 
+/* ============== RODAPÉ ============== */
 footer {
     background-color: var(--marrom);
     border-top: 1px solid var(--bordo);
@@ -93,6 +90,7 @@ footer > p {
     padding: 10px;
 }
 
+/* ============== MAIN ============== */
 .fundo {
     display: block;
     margin: auto;
@@ -141,6 +139,7 @@ section > p {
     padding: 20px;
 }
 
+/* ==============  MAIN - IMAGENS DESTAQUE ============== */
 #home_imagens {
     text-align: center;
     max-width: 800px;
@@ -183,6 +182,7 @@ section > p {
     transition: .5s;
 }
 
+/* ============== MAIN - CONTATO ============== */
 #home_contato {
     margin-bottom: 50px;
     padding-bottom: 20px;
@@ -228,12 +228,56 @@ section > p {
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.384);  
 }
 
-#setahome {
-    display: block;
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    z-index: 99;    
+/* =============== PÁGINA DE DOCES =================*/
+
+#pagina-doces {
+    text-align: center;
+}
+
+#pagina-doces > h1 {
+    font-family: var(--fontepadrao);
+    text-indent: 20px;    
+    text-align: left;
+    padding: 5px;    
+    font-size: 1.9em;
+    color: var(--marrom);
+    background-color: #f3b6006e;    
+    border: 1px solid var(--rosa);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+#pagina-doces > h2 {
+    font-size: 1.6em;    
+    margin: auto;
+}
+
+.doces {
+    display: inline-block;    
+    text-align: center;    
+    margin-top: 20px;    
+}
+
+.doces > img {    
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
+}
+
+.doces > p {    
+    width: 150px;    
+    margin: auto;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: var(--marrom);
+    margin-bottom: 30px;
+    background-color: var(--rosa);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.308);
 }
 
 /* =============== PÁGINA DE GELATOS =================*/
@@ -268,68 +312,16 @@ section > p {
 }
 
 .gelatos > img {    
-    width: 150px;
+    width: 120px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
 }
 
 .gelatos > p {    
-    width: 175px;    
+    width: 150px;    
     margin: auto;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: var(--marrom);
-    margin-bottom: 30px;
-    background-color: var(--rosa);
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.308);
-}
-
-/* =============== PÁGINA DE DOCES =================*/
-
-#pagina-doces {
-    text-align: center;
-}
-
-#pagina-doces > h1 {
-    font-family: var(--fontepadrao);
-    text-indent: 20px;    
-    text-align: left;
-    padding: 5px;    
-    font-size: 1.9em;
-    color: var(--marrom);
-    background-color: #f3b6006e;    
-    border: 1px solid var(--rosa);
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 2px;
-}
-
-#pagina-doces > h2 {
-    font-size: 1.6em;    
-    margin: auto;
-}
-
-.doces {
-    display: inline-block;    
-    text-align: center;    
-    margin-top: 20px;    
-}
-
-.doces > img {    
-    width: 150px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
-}
-
-.doces > p {    
-    width: 175px;    
-    margin: auto;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
     color: var(--marrom);
     margin-bottom: 30px;
