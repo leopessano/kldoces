@@ -88,12 +88,16 @@ footer > p {
     padding: 10px;
 }
 
-.fundoimg {
+.fundo {
     display: block;
-    min-width: 300px;
-    max-width: 800px;
     margin: auto;
-    margin-top: 1px;        
+    width: 100vw;
+    max-width: 800px;
+    height: 300px;
+    background-image: url('img/fundo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;    
 }
 
 main > a {
