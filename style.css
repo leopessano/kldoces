@@ -185,6 +185,8 @@ section > p {
 
 #home_contato > ul {    
     margin-left: 5%;
+    text-align: center;
+    list-style: none;    
 }
 
 #igicon {
@@ -195,7 +197,7 @@ section > p {
     max-width: 20px;
 }
 
-.link-contato {
+.link-contato {    
     text-decoration: none;
     color: var(--marrom);    
     font-size: 1.2em;
@@ -209,6 +211,16 @@ section > p {
     border-radius: 5px;
     text-decoration-line: underline;  
     transition: .5s;
+}
+
+#endereco {    
+    margin-top: 20px;
+    text-align: center;    
+}
+
+#endereco > iframe {
+    margin-top: 15px; 
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.384);  
 }
 
 #setahome {
