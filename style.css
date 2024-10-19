@@ -11,6 +11,7 @@ CORES
     --bordo: #3C0000;
     --amarelo: #F3B700;
     --marrom: #774936;
+    --fontepadrao: 'Courgette', arial, sans-serif;
 }
 
 * {
@@ -231,8 +232,16 @@ section > p {
     z-index: 99;    
 }
 
+/* =============== PÁGINA DE GELATOS =================*/
+
+#pagina-gelatos {
+    text-align: center;
+}
+
 #pagina-gelatos > h1 {
+    font-family: var(--fontepadrao);
     text-indent: 20px;    
+    text-align: left;
     padding: 5px;    
     font-size: 1.9em;
     color: var(--marrom);
@@ -245,25 +254,78 @@ section > p {
 }
 
 #pagina-gelatos > h2 {
-    font-size: 1.6em;
+    font-size: 1.6em;    
 }
 
 .gelatos {
-    display: block;
-    text-align: center;
+    display: inline-block;    
+    text-align: center;    
     margin-top: 20px;    
 }
 
 .gelatos > img {    
-    width: 200px;
+    width: 150px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
 }
 
 .gelatos > p {    
-    width: 250px;    
+    width: 175px;    
     margin: auto;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--marrom);
+    margin-bottom: 30px;
+    background-color: var(--rosa);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.308);
+}
+
+/* =============== PÁGINA DE DOCES =================*/
+
+#pagina-doces {
+    text-align: center;
+}
+
+#pagina-doces > h1 {
+    font-family: var(--fontepadrao);
+    text-indent: 20px;    
+    text-align: left;
+    padding: 5px;    
+    font-size: 1.9em;
+    color: var(--marrom);
+    background-color: #f3b6006e;    
+    border: 1px solid var(--rosa);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+#pagina-doces > h2 {
+    font-size: 1.6em;    
+    margin: auto;
+}
+
+.doces {
+    display: inline-block;    
+    text-align: center;    
+    margin-top: 20px;    
+}
+
+.doces > img {    
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
+}
+
+.doces > p {    
+    width: 175px;    
+    margin: auto;
+    font-size: 0.8em;
     font-weight: bold;
     color: var(--marrom);
     margin-bottom: 30px;
