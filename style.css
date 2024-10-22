@@ -313,6 +313,7 @@ section > p {
 
 .gelatos > img {    
     width: 120px;
+    height: 120px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
