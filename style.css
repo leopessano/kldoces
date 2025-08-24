@@ -144,9 +144,8 @@ section {
 section > h2 {
     color: var(--bordo);
     font-size: 1.3em;    
-    text-align: center;
-    text-decoration: overline;
-    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
+    text-align: center;    
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.438);
     margin-top: 10px;
     margin-bottom: 10px;    
     padding-top: 10px;       
@@ -188,15 +187,14 @@ section > p {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    padding: 8px;
-    border-radius: 10px;
+    padding: 8px 12px;
+    border-radius: 20px;
     margin-bottom: 10px;    
 }
 
 .verdoces:hover {
-    color: var(--amarelo);
-    text-decoration: underline;
-    transition: .5s;
+    color: var(--marrom);
+    background-color: var(--rosa);    
 }
 
 /* ============== MAIN - CONTATO ============== */
@@ -230,9 +228,8 @@ section > p {
     color: var(--amarelo);    
     padding-top: 2px;
     padding-bottom: 2px;
-    border-radius: 5px;
-    text-decoration-line: underline;  
-    transition: .5s;
+    border-radius: 5px;    
+    transition: .2s;
 }
 
 #endereco {    
@@ -252,18 +249,20 @@ section > p {
 }
 
 #pagina-doces > h1 {
+    display: block;        
+    max-width: max-content;
+    text-align: left;
     font-family: var(--fontepadrao);
     color: var(--marrom);
-    font-size: 1.9em;
-    text-indent: 20px;    
-    text-align: left;
-    padding: 5px;
-    background-color: #f3b6006e;    
+    font-size: 1.9em;              
+    background-color: #fdff83;    
     border: 1px solid var(--rosa);
-    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+    border-radius: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 2px;
+    padding: 5px 50px;
 }
 
 #pagina-doces > h2 {
@@ -304,18 +303,20 @@ section > p {
 }
 
 #pagina-gelatos > h1 {
-    font-family: var(--fontepadrao);
-    font-size: 1.9em;
-    color: var(--marrom);
-    text-indent: 20px;    
+    display: block;        
+    max-width: max-content;
     text-align: left;
-    padding: 5px;        
-    background-color: #f3b6006e;    
+    font-family: var(--fontepadrao);
+    color: var(--marrom);
+    font-size: 1.9em;              
+    background-color: #fdff83;    
     border: 1px solid var(--rosa);
-    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+    border-radius: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 2px;
+    padding: 5px 50px;
 }
 
 #pagina-gelatos > h2 {
