@@ -1,16 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /*  ========== VARIAVEIS ============= */
 :root{
     --rosa: #ffbad1;
     --bordo: #3C0000;
     --amarelo: #F3B700;
-    --marrom: #2D140F;
+    --marrom: #774936;
     --fontepadrao: 'Courgette', arial, sans-serif;
 }
 
@@ -41,13 +37,9 @@ header {
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.521);    
 }
 
-#cupcakeLogo {
-    width: 50px;
-}
-
 header > h1 {
     font-family: Courgette;
-    color: white;
+    color: #ffbad1;
     font-size: 1.8em;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     text-align: center;            
@@ -58,22 +50,11 @@ header > h1 {
 
 header > p {
     font-family: Courgette;
-    color: white;
-    font-size: 0.9em;
+    color: #ffbad1;
+    font-size: 0.7em;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     text-align: center; 
-    padding-bottom: 4%;   
-    min-width: 200px;
-    max-width: 900px;
-}
-
-span {
-    font-family: Courgette;
-    color: #E15A7A;
-    font-size: 1.8em;
-    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
-    text-align: center;            
-    padding-top: 2%;
+    padding-bottom: 1%;   
     min-width: 200px;
     max-width: 900px;
 }
@@ -102,19 +83,18 @@ nav {
 }
 
 nav > a {
-    color: #F7AE85;
-    font-family: poppins;
-    font-size: 0.9em;
-    font-weight: normal;
+    color: #ffbad1;
+    font-size: 1.1em;
+    font-weight: bold;
     text-decoration: none;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     margin-right: 5px;
-    padding: 5px;    
+    padding: 3px;    
 }
 
 nav > a:hover {
+    color: var(--amarelo);
     transition: .5s;    
-    color: #E36886;
 }
 
 /* ============== RODAPÉ ============== */
@@ -129,7 +109,7 @@ footer {
 }
 
 footer > p {
-    color: #a08d89;
+    color: white;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     text-align: center;
     font-size: 0.6em;
@@ -142,8 +122,8 @@ footer > p {
     margin: auto;
     width: 100vw;
     max-width: 800px;
-    height: 150px;
-    background-image: url('img/fundoPagina.png');
+    height: 200px;
+    background-image: url('img/fundo.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;    
@@ -171,18 +151,12 @@ section {
 
 section > h2 {
     color: var(--bordo);
-    font-family: playfair-display;
-    font-size: 1.5em;    
+    font-size: 1.3em;    
     text-align: center;    
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.438);
     margin-top: 10px;
     margin-bottom: 10px;    
     padding-top: 10px;       
-}
-
-section span {
-    font-size: 1em;
-    font-weight: normal;
 }
 
 section > p {
@@ -205,6 +179,7 @@ section > p {
     width: 150px;
     height: 150px;
     padding: 1px;
+    border: 1.5px solid var(--marrom);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);    
     border-radius: 10px;
     margin-top: 20px;
@@ -214,22 +189,20 @@ section > p {
 
 .verdoces {
     display: inline-block;    
-    background-color: white;
-    color: #3C0000;
+    background-color: var(--bordo);
+    color: var(--rosa);
     text-decoration: none;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.2em;
+    font-weight: bold;
     padding: 8px 12px;
     border-radius: 20px;
     margin-bottom: 10px;    
-    border-style: solid;
-    border-width: 1px;
-    border-color: #E15A7A;
 }
 
 .verdoces:hover {
-    color: white;
-    background-color: #E15A7A;
+    color: var(--marrom);
+    background-color: var(--rosa);    
 }
 
 /* ============== MAIN - CONTATO ============== */
@@ -284,16 +257,19 @@ section > p {
 }
 
 #pagina-doces > h1 {
-    display: block; 
+    display: block;        
     max-width: max-content;
-    font-family: Courgette;
-    color: #E36886;
-    font-size: 1.9em;         
-    border: 1px solid #E36886;
+    text-align: left;
+    font-family: var(--fontepadrao);
+    color: var(--marrom);
+    font-size: 1.9em;              
+    background-color: #fdff83;    
+    border: 1px solid var(--rosa);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
     border-radius: 50px;
-    margin: auto;
     margin-top: 10px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    margin-left: 2px;
     padding: 5px 50px;
 }
 
@@ -335,16 +311,19 @@ section > p {
 }
 
 #pagina-gelatos > h1 {
-    display: block; 
+    display: block;        
     max-width: max-content;
-    font-family: Courgette;
-    color: #E36886;
-    font-size: 1.9em;         
-    border: 1px solid #E36886;
+    text-align: left;
+    font-family: var(--fontepadrao);
+    color: var(--marrom);
+    font-size: 1.9em;              
+    background-color: #fdff83;    
+    border: 1px solid var(--rosa);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
     border-radius: 50px;
-    margin: auto;
     margin-top: 10px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+    margin-left: 2px;
     padding: 5px 50px;
 }
 
