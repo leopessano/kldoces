@@ -31,7 +31,7 @@
 }
 
 body {
-    background-color: var(--rosa);
+    background-color: white;
 }
 
 /* ============== CABECALHO ============== */
@@ -59,7 +59,7 @@ header > h1 {
 header > p {
     font-family: Courgette;
     color: white;
-    font-size: 0.9em;
+    font-size: 1.1em;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
     text-align: center; 
     padding-bottom: 4%;   
@@ -96,20 +96,18 @@ span {
 
 nav {    
     display: block;
-    text-align: right;
-    padding: 5px;
-    margin-right: 1%;    
+    text-align: center;
+    padding: 30px;
 }
 
 nav > a {
     color: #F7AE85;
     font-family: poppins;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-weight: normal;
     text-decoration: none;
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);
-    margin-right: 5px;
-    padding: 5px;    
+    padding: 5px;  
 }
 
 nav > a:hover {
@@ -143,7 +141,7 @@ footer > p {
     width: 100vw;
     max-width: 800px;
     height: 150px;
-    background-image: url('img/fundoPagina.png');
+    background-image: url('../img/fundoPagina.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;    
@@ -163,10 +161,6 @@ section {
     background-color: white;
     margin-top: 25px;
     margin-bottom: 50px;
-    border: 1px solid black;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.493);    
 }
 
 section > h2 {
@@ -212,6 +206,15 @@ section > p {
     margin-right: 10px;
 }
 
+#home_imagens > hr {
+    border-width: 1px;
+    border-style: solid;
+    max-width: 80vw;
+    margin: auto;
+    color: #FCE1E1;
+    border-radius: 50px;
+}
+
 .verdoces {
     display: inline-block;    
     background-color: white;
@@ -219,8 +222,8 @@ section > p {
     text-decoration: none;
     text-align: center;
     font-size: 1.2em;
-    padding: 8px 12px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 100px;
     margin-bottom: 10px;    
     border-style: solid;
     border-width: 1px;
@@ -234,22 +237,28 @@ section > p {
 
 /* ============== MAIN - CONTATO ============== */
 #home_contato {
+    border: 0;
+    border-radius: 30px 30px 60px 60px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.137);
+    max-width: 97vw;
     margin-bottom: 50px;
     padding-bottom: 20px;
+    background-color: #FCE1E1;
 }
 
 #contatos {   
     display: block;
-    margin: auto;
     text-align: center;
 }
 
 #igicon {
     max-width: 25px;
+    vertical-align: bottom;
 }
 
 #wpicon {
-    max-width: 20px;
+    max-width: 25px;
+    vertical-align: bottom;
 }
 
 .link-contato {    
