@@ -238,12 +238,13 @@ section > p {
 /* ============== MAIN - CONTATO ============== */
 #home_contato {
     border: 0;
-    border-radius: 30px 30px 60px 60px;
+    border-radius: 10px 10px 30px 30px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.137);
-    max-width: 97vw;
+    max-width: 95vw;
     margin-bottom: 50px;
     padding-bottom: 20px;
-    background-color: #FCE1E1;
+    background-color: #fce1e1a6;
+    padding-top: 20px;
 }
 
 #contatos {   
