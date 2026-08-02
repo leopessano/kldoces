@@ -296,7 +296,7 @@ section > p {
 #pagina-doces > h1 {
     display: block; 
     max-width: max-content;
-    font-family: Courgette;
+    font-family: poppins;
     color: #E36886;
     font-size: 1.9em;         
     border: 1px solid #E36886;
@@ -347,7 +347,7 @@ section > p {
 #pagina-gelatos > h1 {
     display: block; 
     max-width: max-content;
-    font-family: Courgette;
+    font-family: poppins;
     color: #E36886;
     font-size: 1.9em;         
     border: 1px solid #E36886;
