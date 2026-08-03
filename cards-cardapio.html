@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cardápio — Nossas delícias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,600&family=Caveat:wght@600;700&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF3EA;
+    --wine:#7B2D3E;
+    --wine-dark:#5A1F2E;
+    --gold:#C9973A;
+    --ink:#3A2620;
+    --ink-soft:#6b5750;
+    --paper:#FFFDF9;
+    --line:#E7DCCC;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    padding:60px 24px;
+    background:var(--cream);
+    font-family:'Nunito Sans', sans-serif;
+    color:var(--ink);
+  }
+
+  .header{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 48px;
+  }
+
+  .header .eyebrow{
+    font-family:'Caveat', cursive;
+    font-size:1.3rem;
+    color:var(--wine);
+  }
+
+  .header h1{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:2.4rem;
+    margin:4px 0 0;
+    line-height:1.15;
+  }
+
+  .header h1 em{
+    color:var(--wine);
+    font-style:italic;
+    font-weight:600;
+  }
+
+  .grid{
+    max-width:1100px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+    gap:28px;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 1px 2px rgba(58,38,32,.06), 0 10px 22px -12px rgba(58,38,32,.22);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 2px 4px rgba(58,38,32,.08), 0 20px 30px -14px rgba(58,38,32,.3);
+  }
+
+  .photo{
+    width:100%;
+    aspect-ratio:4/3;
+    background-size:cover;
+    background-position:center;
+    /* troque o background abaixo por: background-image:url('sua-foto.jpg'); */
+  }
+
+  .card:nth-child(1) .photo{background:linear-gradient(160deg,#dff3ee,#a9d9cf 55%,#5fa89b);}
+  .card:nth-child(2) .photo{background:linear-gradient(160deg,#7b2d3e,#a83e52 55%,#c96a7c);}
+  .card:nth-child(3) .photo{background:linear-gradient(160deg,#bcdcf7,#7fb3e0 55%,#4f7fac);}
+  .card:nth-child(4) .photo{background:linear-gradient(160deg,#4a2a22,#7a4536 55%,#e8a6b4);}
+
+  .info{
+    padding:16px 18px 20px;
+  }
+
+  .tag{
+    font-size:.66rem;
+    font-weight:800;
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  .name-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:6px;
+  }
+
+  .name{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.15rem;
+    color:var(--ink);
+    line-height:1.25;
+  }
+
+  .price{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.1rem;
+    color:var(--wine);
+    white-space:nowrap;
+  }
+
+  .price::before{
+    content:'R$ ';
+    font-size:.75rem;
+    font-weight:600;
+    color:var(--wine);
+  }
+
+  .divider{
+    border:none;
+    border-top:1px dashed var(--line);
+    margin:10px 0;
+  }
+
+  .desc{
+    font-size:.85rem;
+    color:var(--ink-soft);
+    line-height:1.4;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="eyebrow">o que temos hoje</div>
+    <h1>Nosso <em>cardápio</em></h1>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="photo"></div>
+      <div class="info">
+        <span class="tag">Sobremesa</span>
+        <div class="name-row">
+          <span class="name">Mousse gelada</span>
+          <span class="price">12,00</span>
+        </div>
+        <hr class="divider">
+        <p class="desc">Cremosa e refrescante, servida no potinho individual.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo"></div>
+      <div class="info">
+        <span class="tag">Copo Individual</span>
+        <div class="name-row">
+          <span class="name">Copo da felicidade</span>
+          <span class="price">15,00</span>
+        </div>
+        <hr class="divider">
+        <p class="desc">Camadas de bolo, recheio e cobertura em copo de 300ml.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo"></div>
+      <div class="info">
+        <span class="tag">Doce</span>
+        <div class="name-row">
+          <span class="name">Rocambole caseiro</span>
+          <span class="price">18,00</span>
+        </div>
+        <hr class="divider">
+        <p class="desc">Massa fofinha enrolada com recheio na medida certa.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo"></div>
+      <div class="info">
+        <span class="tag">Doce</span>
+        <div class="name-row">
+          <span class="name">Brigadeiro recheado</span>
+          <span class="price">6,00</span>
+        </div>
+        <hr class="divider">
+        <p class="desc">Casquinha de chocolate com recheio surpresa por dentro.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

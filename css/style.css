@@ -11,6 +11,17 @@
     --bordo: #3C0000;
     --amarelo: #F3B700;
     --marrom: #2D140F;
+
+    /* CARDS */
+    --cream:#FBF3EA;
+    --wine:#7B2D3E;
+    --wine-dark:#5A1F2E;
+    --gold:#C9973A;
+    --ink:#3A2620;
+    --ink-soft:#6b5750;
+    --paper:#FFFDF9;
+    --line:#E7DCCC;
+
     --fontepadrao: 'Courgette', arial, sans-serif;
 }
 
@@ -67,7 +78,7 @@ header > p {
     max-width: 900px;
 }
 
-span {
+.kl, .del{
     font-family: Courgette;
     color: #E15A7A;
     font-size: 1.8em;
@@ -170,11 +181,11 @@ section > h2 {
     text-align: center;    
     text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.438);
     margin-top: 10px;
-    margin-bottom: 10px;    
+    margin-bottom: 40px;    
     padding-top: 10px;       
 }
 
-section span {
+.del {
     font-size: 1em;
     font-weight: normal;
 }
@@ -185,7 +196,7 @@ section > p {
 }
 
 /* ==============  MAIN - IMAGENS DESTAQUE ============== */
-#home_imagens {
+/* #home_imagens {
     text-align: center;
     max-width: 800px;
     min-width: 320px;
@@ -213,6 +224,103 @@ section > p {
     margin: auto;
     color: #FCE1E1;
     border-radius: 50px;
+} */
+
+/* ==============  MAIN - CARDS ============== */
+
+.grid{
+    max-width:800px;
+    margin:0 10px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:28px;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 1px 2px rgba(58,38,32,.06), 0 10px 22px -12px rgba(58,38,32,.22);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 2px 4px rgba(58,38,32,.08), 0 20px 30px -14px rgba(58,38,32,.3);
+  }
+
+  .photo{
+    width:100%;
+    aspect-ratio:4/3;
+    background-size:cover;
+    background-position:center;
+    /* troque o background abaixo por: background-image:url('sua-foto.jpg'); */
+  }
+
+  .card:nth-child(1) .photo{background-image:url('../img/doces/tortaLimao.jpg');}
+  .card:nth-child(2) .photo{background-image:url('../img/doces/copoPacoca.jpg');}
+  .card:nth-child(3) .photo{background-image:url('../img/doces/banoffe.jpg');}
+  .card:nth-child(4) .photo{background-image:url('../img/doces/tortaBolachinha.jpg');}
+
+  .info{
+    padding:16px 18px 20px;
+  }
+
+  .tag{
+    font-size:.66rem;
+    font-weight:800;
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  .name-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:6px;
+  }
+
+  .name{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.15rem;
+    color:var(--ink);
+    line-height:1.25;
+  }
+
+  .price{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:1.1rem;
+    color:var(--wine);
+    white-space:nowrap;
+  }
+
+  .price::before{
+    content:'R$ ';
+    font-size:.75rem;
+    font-weight:600;
+    color:var(--wine);
+  }
+
+  .divider{
+    border:none;
+    border-top:1px dashed var(--line);
+    margin:10px 0;
+  }
+
+  .desc{
+    font-size:.85rem;
+    color:var(--ink-soft);
+    line-height:1.4;
+  }
+
+.verTodos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .verdoces {
@@ -224,7 +332,7 @@ section > p {
     font-size: 1em;
     padding: 10px 20px;
     border-radius: 100px;
-    margin-bottom: 10px;    
+    margin: 30px 15px;
     border-style: solid;
     border-width: 1px;
     border-color: #E15A7A;
