@@ -230,10 +230,10 @@ section > p {
 
 .grid{
     max-width:800px;
-    margin:0 10px;
+    margin:0 5px;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-    gap:28px;
+    gap: 5px;
   }
 
   .card{
@@ -285,7 +285,7 @@ section > p {
   .name{
     font-family:'Fraunces', serif;
     font-weight:600;
-    font-size:1.15rem;
+    font-size:0.9rem;
     color:var(--ink);
     line-height:1.25;
   }
@@ -293,7 +293,7 @@ section > p {
   .price{
     font-family:'Fraunces', serif;
     font-weight:700;
-    font-size:1.1rem;
+    font-size:1rem;
     color:var(--wine);
     white-space:nowrap;
   }
@@ -332,7 +332,7 @@ section > p {
     font-size: 1em;
     padding: 10px 20px;
     border-radius: 100px;
-    margin: 30px 15px;
+    margin: 30px 5px;
     border-style: solid;
     border-width: 1px;
     border-color: #E15A7A;
@@ -406,7 +406,7 @@ section > p {
     max-width: max-content;
     font-family: poppins;
     color: #E36886;
-    font-size: 1.9em;         
+    font-size: 1.7em;         
     border: 1px solid #E36886;
     border-radius: 50px;
     margin: auto;
@@ -457,7 +457,7 @@ section > p {
     max-width: max-content;
     font-family: poppins;
     color: #E36886;
-    font-size: 1.9em;         
+    font-size: 1.7em;         
     border: 1px solid #E36886;
     border-radius: 50px;
     margin: auto;
