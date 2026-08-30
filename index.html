@@ -1,44 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KL Doces - Menu</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-</head>
-<style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link href="js/cart.js" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+  </head>
+  <style>
     .btinicio {
-        text-decoration: underline;
-        text-underline-offset: 5px;
-        color: #E36886;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      color: #e36886;
     }
-</style>
+  </style>
 
-<body>    
-    <header>        
-        <h1><img id="cupcakeLogo" src="img/cupcake.png" alt="Cupcake em desenho"><span class="kl">KL</span> DOCES & GELATOS</h1>
-        <p>um docinho para os dias amargos</p>
-        <!--<span id="icone-menu" class="material-symbols-outlined" onclick="clickMenu()">
+  <body>
+    <header>
+      <h1>
+        <img
+          id="cupcakeLogo"
+          src="img/cupcake.png"
+          alt="Cupcake em desenho"
+        /><span class="kl">KL</span> DOCES & GELATOS
+      </h1>
+      <p>um docinho para os dias amargos</p>
+      <!--<span id="icone-menu" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span> -->
-        <nav id="menu">            
-            <a class="btinicio" href="index.html">Início</a>
-            <a href="doces.html">Doces</a>
-            <a href="gelatos.html">Gelatos</a>
-            <a href="sobre.html">Sobre</a>
-        </nav>
+      <nav id="menu">
+        <a class="btinicio" href="index.html">Início</a>
+        <a href="doces.html">Doces</a>
+        <a href="gelatos.html">Gelatos</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
     </header>
-    
-    <main>
-        <div class="fundo">                        
-        </div>
-        <section id="home_imagens">
-            <h2>Um pouco das nossas <span class="del">delícias</span></h2>
 
-                    <!-- DESTAQUES -->
-<!--                 <picture>
+    <main>
+      <div class="fundo"></div>
+      <section id="home_imagens">
+        <h2>Um pouco das nossas <span class="del">delícias</span></h2>
+
+        <!-- DESTAQUES -->
+        <!--                 <picture>
                     <img src="img/tortalimaoia.png" alt="Torta de limão">                    
                 </picture>
                 <picture>
@@ -55,92 +65,143 @@
                 </picture>                
                 <picture>
                     <img src="img/tortapequenaIA.png" alt="Sacolé de paçoca">                    
-                </picture>    --> 
+                </picture>    -->
 
-                <div class="grid">
-
-                    <div class="card">
-                    <div class="photo"></div>
-                    <div class="info">
-                        <span class="tag">Torta</span>
-                        <div class="name-row">
-                        <span class="name">Limão</span>
-                        <span class="price">6,00</span>
-                        </div>
-                        <hr class="divider">
-                        <p class="desc">Torta com mousse de limão, cremosa e refrescante.</p>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                    <div class="photo"></div>
-                    <div class="info">
-                        <span class="tag">Copo da Felicidade</span>
-                        <div class="name-row">
-                        <span class="name">Paçoca</span>
-                        <span class="price">15,00</span>
-                        </div>
-                        <hr class="divider">
-                        <p class="desc">Delicioso copo recheado com pedaços de paçoca.</p>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                    <div class="photo"></div>
-                    <div class="info">
-                        <span class="tag">Torta</span>
-                        <div class="name-row">
-                        <span class="name">Banoffe</span>
-                        <span class="price">8,00</span>
-                        </div>
-                        <hr class="divider">
-                        <p class="desc">Doce de leite, banana e canela: o segredo da felicidade.</p>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                    <div class="photo"></div>
-                    <div class="info">
-                        <span class="tag">Torta</span>
-                        <div class="name-row">
-                        <span class="name">Bolachinha</span>
-                        <span class="price">6,00</span>
-                        </div>
-                        <hr class="divider">
-                        <p class="desc">A tradicional torta de bolachinha com mousse de morango que você vai amar.</p>
-                    </div>
-                    </div>
-                </div>
-                
-                <!-- VER TODOS -->
-                <div class="verTodos">
-                    <a class="verdoces" href="doces.html">Ver todos doces</a>   
-                    <a class="verdoces" href="gelatos.html">Ver todos gelatos</a>    
-                </div>
-                    
-                
-        </section>
-
-        <section id="home_contato">   <!-- CONTATO -->
-            <h2>Como nos encontrar</h2> 
-                <div id="contatos">
-                    <a class="link-contato" href="https://www.instagram.com/kl_docesegelatos/?__pwa=1" target="_blank">Instagram</a>
-                    <img id="igicon" src="img/igicon.png" alt="Icone instagram">
-                    <br>
-                    <a class="link-contato" href="https://wa.me/555599957545?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20melhor%20o%20card%C3%A1pio%20de%20doces.%20Me%20chamo:%20">WhatsApp</a>
-                    <img id="wpicon" src="img/wpicon.png" alt="Icone whatsapp">
-                </div>                
-            <div id="endereco">  <!-- ENDEREÇO -->
-                <p>Também no <strong><em>Empório Silveira</em></strong></p>
-                <p>Endereço: R. Acário Carvalho, 1579</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d519.0799305757139!2d-57.07196836525244!3d-29.768452233560485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1743973997408!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="grid">
+          <div class="card">
+            <div class="photo"></div>
+            <div class="info">
+              <span class="tag">Torta</span>
+              <div class="name-row">
+                <span class="name">Limão</span>
+                <span class="price">6,00</span>
+              </div>
+              <hr class="divider" />
+              <p class="desc">
+                Torta com mousse de limão, cremosa e refrescante.
+              </p>
+              <button
+                class="btn-pedir"
+                data-name="Torta Limão"
+                data-price="6.00"
+              >
+                Pedir
+              </button>
             </div>
-        </section>
+          </div>
+
+          <div class="card">
+            <div class="photo"></div>
+            <div class="info">
+              <span class="tag">Copo da Felicidade</span>
+              <div class="name-row">
+                <span class="name">Paçoca</span>
+                <span class="price">15,00</span>
+              </div>
+              <hr class="divider" />
+              <p class="desc">Delicioso copo recheado com pedaços de paçoca.</p>
+              <button
+                class="btn-pedir"
+                data-name="Copo Felicidade"
+                data-price="15.00"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="photo"></div>
+            <div class="info">
+              <span class="tag">Torta</span>
+              <div class="name-row">
+                <span class="name">Banoffe</span>
+                <span class="price">8,00</span>
+              </div>
+              <hr class="divider" />
+              <p class="desc">
+                Doce de leite, banana e canela: o segredo da felicidade.
+              </p>
+              <button class="btn-pedir" data-name="Banoffe" data-price="8.00">
+                Pedir
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="photo"></div>
+            <div class="info">
+              <span class="tag">Torta</span>
+              <div class="name-row">
+                <span class="name">Bolachinha</span>
+                <span class="price">6,00</span>
+              </div>
+              <hr class="divider" />
+              <p class="desc">
+                A tradicional torta de bolachinha com mousse de morango que você
+                vai amar.
+              </p>
+              <button
+                class="btn-pedir"
+                data-name="Torta Bolacinha"
+                data-price="6.00"
+              >
+                Pedir
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VER TODOS -->
+        <div class="verTodos">
+          <a class="verdoces" href="doces.html">Ver todos doces</a>
+          <a class="verdoces" href="gelatos.html">Ver todos gelatos</a>
+        </div>
+      </section>
+
+      <section id="home_contato">
+        <!-- CONTATO -->
+        <h2>Como nos encontrar</h2>
+        <div id="contatos">
+          <a
+            class="link-contato"
+            href="https://www.instagram.com/kl_docesegelatos/?__pwa=1"
+            target="_blank"
+            >Instagram</a
+          >
+          <img id="igicon" src="img/igicon.png" alt="Icone instagram" />
+          <br />
+          <a
+            class="link-contato"
+            href="https://wa.me/555599957545?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20melhor%20o%20card%C3%A1pio%20de%20doces.%20Me%20chamo:%20"
+            >WhatsApp</a
+          >
+          <img id="wpicon" src="img/wpicon.png" alt="Icone whatsapp" />
+        </div>
+        <div id="endereco">
+          <!-- ENDEREÇO -->
+          <p>
+            Também no <strong><em>Empório Silveira</em></strong>
+          </p>
+          <p>Endereço: R. Acário Carvalho, 1579</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d519.0799305757139!2d-57.07196836525244!3d-29.768452233560485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1743973997408!5m2!1spt-BR!2sbr"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Copyright© 2026 - Criado com amor por Leonardo Pessano e Karen Bandeira</p>        
+      <p>
+        Copyright© 2026 - Criado com amor por Leonardo Pessano e Karen Bandeira
+      </p>
     </footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

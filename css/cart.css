@@ -1,0 +1,187 @@
+/* =============================================================
+   KL DOCES - Estilos do carrinho de pedidos
+   Reaproveita as variáveis de cor já definidas em style.css
+   ============================================================= */
+
+#kl-cart-button {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 998;
+  background-color: #E15A7A;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 18px;
+  font-size: 1.1em;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+#kl-cart-button:hover {
+  background-color: var(--bordo);
+}
+
+#kl-cart-count {
+  font-weight: bold;
+}
+
+#kl-cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#kl-cart-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#kl-cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 320px;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: var(--paper, #fffdf9);
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+#kl-cart-drawer.open {
+  right: 0;
+}
+
+.kl-cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: var(--marrom);
+}
+
+.kl-cart-header h3 {
+  color: white;
+  font-family: 'Fraunces', serif;
+}
+
+#kl-cart-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#kl-cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px;
+}
+
+.kl-cart-empty {
+  color: var(--ink-soft, #6b5750);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.kl-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line, #e7dccc);
+}
+
+.kl-cart-item-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.kl-cart-item-info span {
+  color: var(--ink-soft, #6b5750);
+  font-size: 0.85em;
+}
+
+.kl-cart-item-qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kl-cart-item-qty button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--gold, #c9973a);
+  background: white;
+  color: var(--bordo);
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1;
+}
+
+.kl-cart-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--line, #e7dccc);
+}
+
+.kl-cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+#kl-cart-checkout {
+  width: 100%;
+  padding: 12px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+#kl-cart-checkout:hover {
+  opacity: 0.9;
+}
+
+#kl-cart-clear {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid var(--bordo);
+  border-radius: 8px;
+  color: var(--bordo);
+  cursor: pointer;
+}
+
+/* Botão "Pedir" dentro dos cards */
+.btn-pedir {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: white;
+  color: var(--bordo);
+  border: 1px solid #E15A7A;
+  border-radius: 100px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.btn-pedir:hover {
+  background-color: #E15A7A;
+  color: white;
+}
