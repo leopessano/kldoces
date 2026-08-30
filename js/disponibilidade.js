@@ -33,7 +33,7 @@ async function aplicarDisponibilidade() {
         botao.disabled = true;
         botao.textContent = "Indisponível hoje";
 
-        const card = botao.closest("picture.doces, picture.gelatos, .card");
+        const card = botao.closest(".card");  //picture.doces, picture.gelatos, (adicionar esses elementos dentro de .closest se quiser marcar os cards em cinza)
         if (card) card.classList.add("indisponivel");
       }
     });
