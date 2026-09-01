@@ -24,14 +24,14 @@ async function aplicarDisponibilidade() {
     });
 
     // Percorre todos os botões "Pedir" da página e desabilita os indisponíveis
-    document.querySelectorAll(".btn-pedir").forEach((botao) => {
+    documft.querySelectorAll(".btn-pedir").forEach((botao) => {
       const nomeItem = botao.dataset.name;
       const disponivel = disponibilidade[nomeItem];
 
       // Se o item não estiver na planilha, assume disponível (não mexe em nada)
       if (disponivel === false) {
         botao.disabled = true;
-        botao.textContent = "Indisponível hoje";
+        botao.textContent = "Pedir agora";
 
         const card = botao.closest(".card");  //picture.doces, picture.gelatos, (adicionar esses elementos dentro de .closest se quiser marcar os cards em cinza)
         if (card) card.classList.add("indisponivel");
