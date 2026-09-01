@@ -1,0 +1,94 @@
+/* =============================================================
+   ENCOMENDAS — adicione este bloco ao final do seu css/cart.css
+   (estiliza o botão "Encomendar", os selos e o campo de data
+   que aparecem dentro do carrinho)
+   ============================================================= */
+
+/* Botão "Encomendar" ao lado do "Pedir" */
+.btn-encomendar {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 6px;
+  padding: 6px 14px;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #E15A7A;
+  background-color: white;
+  border: 1px solid #E15A7A;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.btn-encomendar:hover {
+  color: white;
+  background-color: #E15A7A;
+}
+
+/* Mesmo quando o card está marcado como indisponível,
+   o botão de encomenda continua com boa legibilidade */
+.indisponivel .btn-encomendar {
+  opacity: 1;
+}
+
+/* Selinhos "Para hoje" / "Encomenda" dentro do carrinho */
+.kl-cart-badge {
+  display: inline-block;
+  font-size: 0.65em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 100px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.kl-cart-badge-now {
+  background-color: #FCE1E1;
+  color: #3C0000;
+}
+
+.kl-cart-badge-order {
+  background-color: #F3B700;
+  color: #3C0000;
+}
+
+/* Campo de data da encomenda, dentro do item do carrinho */
+.kl-cart-item-date {
+  margin-top: 6px;
+  font-size: 0.8em;
+}
+
+.kl-cart-item-date label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #2D140F;
+}
+
+.kl-cart-item-date input[type="date"] {
+  padding: 4px 6px;
+  border: 1px solid #E15A7A;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.kl-cart-item-date input.kl-cart-date-missing {
+  border-color: #c0392b;
+  background-color: #fdecea;
+}
+
+/* Aviso exibido no rodapé do carrinho quando falta escolher data */
+.kl-cart-warning {
+  color: #c0392b;
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Botão de checkout desabilitado enquanto houver data pendente */
+#kl-cart-checkout:disabled {
+  cursor: not-allowed;
+  background-color: #ccc !important;
+  color: #666 !important;
+}
